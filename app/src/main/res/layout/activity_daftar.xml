@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header: Judul dan Tombol Home -->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/red"
+            android:padding="20sp"
+            android:src="@drawable/baseline_home_24" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:height="70dp"
+            android:background="@color/yellow"
+            android:padding="20dp"
+            android:text="@string/title_daftar"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Identitas -->
+    <LinearLayout
+        android:id="@+id/form"
+        android:layout_below="@id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="3">
+
+        <!-- Foto Profil -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_weight="1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/headerLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_blue"
+            android:src="@drawable/baseline_person_24" />
+
+        <!-- Kolom Input Data -->
+        <LinearLayout
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/namaEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/green"
+                android:hint="@string/hint_nama"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/nimEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/green"
+                android:hint="@string/hint_nim"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/teal_200"
+                android:backgroundTint="@color/green"
+                android:hint="@string/hint_email"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Tombol Daftar -->
+    <Button
+        android:background="@drawable/selector_button"
+        android:id="@+id/btnDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/form"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_blue"
+        android:padding="10dp"
+        android:text="@string/button_daftar"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/lanjut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDaftar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tekan Daftar untuk lanjut ke halaman Masuk"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

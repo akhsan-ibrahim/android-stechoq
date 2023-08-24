@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Magang Stechoq</string>
+
+    <string name="title">Quiz 2 - Membuat Project</string>
+    <string name="author">by Akhsan Ibrahim</string>
+
+    <string name="no1">NOMOR 1</string>
+    <string name="no2">NOMOR 2</string>
+    <string name="no3">NOMOR 3</string>
+
+    <string name="title_masuk">Masuk</string>
+    <string name="title_daftar">Pendaftaran</string>
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+
+    <string name="hint_fullname">Fullname</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confpass">Confirm Password</string>
+    <string name="hint_nama">Nama</string>
+    <string name="hint_nim">NIM</string>
+
+    <string name="button_masuk">MASUK</string>
+    <string name="button_daftar">DAFTAR</string>
+    <string name="button_login">LOGIN</string>
+    <string name="button_register">REGISTER</string>
+</resources>
